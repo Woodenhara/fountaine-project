@@ -9,6 +9,7 @@
     <h1>=================</h1>
     <h1>Formulir Pendaftaran</h1>
     <h1>=================</h1>
+    <form action="list.html" method="post" id="reset">
     <label for="nama">Nama Calon Siswa :</label><br>
     <input type="text">
     <br><br>
@@ -58,6 +59,16 @@
     <label for="Perhotelan">Perhotelan</label>
     <br><br>
     <p>Alasan memilih sekolah dan jurusan yang dipilih :</p>
-    <textarea rows="10" cols="40" placeholder=" Tulis alasan anda di sini..."></textarea>
+    <textarea rows="10" cols="40" placeholder=" Tulis alasan anda di sini..."></textarea><br>
+    <button>Sign Up</button>
+</form>
+<button onclick="resetForm()">Ulang</button>
+<a href="welcome.html"><h1><button>Batal</button></h1></a>
+
+<script>
+    function resetForm(){
+        document.getElementById("reset").reset();
+    }
+</script>
 </body>
 </html>
