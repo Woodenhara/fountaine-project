@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(238, 173, 67);
+}
+button {
+    background-color: rgb(0, 252, 168);
+    color: white;
+}
+a{
+    text-decoration: none;
+}
