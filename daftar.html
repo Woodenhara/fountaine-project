@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pendaftaran</title>
+    <link rel="stylesheet" href="ekternal.css">
     <style>
     body{
            background-image:url("https://wallpapercave.com/wp/wp3738693.jpg");
@@ -67,15 +68,15 @@
     <h1 style="color: white;">=================</h1>
     <form action="list.html" method="post" id="reset" class="warna">
     <label for="nama">Nama Calon Siswa :</label><br>
-    <input type="text">
+    <input type="text" required>
     <br><br>
     <label for="nama">Tempat, Tanggal Lahir :</label>
     <br>
-    <input type="text">
+    <input type="text" required>
     <br><br>
     <label for="nama">Alamat :</label>
     <br>
-    <input type="text">
+    <input type="text" required>
     <br><br>
     <p>Jenis Kelamin :</p>
     <input type="radio" id="laki" name="klmn" value="Laki-laki">
@@ -119,15 +120,10 @@
 <button class="button-29" role="button">Sign Up</button></a>
     <br><br>
 </form>
-<button onclick="resetForm()" class="button-29" role="button">Ulang</button></a>
+<button type="reset" class="button-29" role="button">Ulang</button></a>
 <br><br>
 <a href="welcome.html"><button class="button-29" role="button">Kembali</button></a>
 
-<script>
-    function resetForm(){
-        document.getElementById("reset").reset();
-    }
-</script>
 </center>
 </body>
 </html>
