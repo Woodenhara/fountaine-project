@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendaftaran</title>
+    <title>Document</title>
     <link rel="stylesheet" href="ekternal.css">
     <style>
     body{
@@ -11,8 +11,16 @@
            background-size: cover;
     }
 
-    .warna{
-        color: white;
+    
+
+    .container{
+      background-color: #dae5f1be;
+      text-align: center;
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 2px solid;
+      border-radius: 20px;
     }
 
     .button-29 {
@@ -62,21 +70,21 @@
  </style>
 </head>
 <body>
-    <center>
-    <h1 style="color: white;">=================</h1>
-    <h1 style="color: white;">Formulir Pendaftaran</h1>
-    <h1 style="color: white;">=================</h1>
-    <form action="list.html" method="post" id="reset" class="warna">
+  <div class="container">
+    <form action="list.html" method="post" id="riset">
+    <h1 style="color: black(188, 88, 7, 0.911);">=================</h1>
+    <h1 style="color: black(243, 78, 7);">Formulir Pendaftaran</h1>
+    <h1 style="color: black(188, 88, 7, 0.911)">=================</h1>
     <label for="nama">Nama Calon Siswa :</label><br>
-    <input type="text" required>
+    <input type="text">
     <br><br>
     <label for="nama">Tempat, Tanggal Lahir :</label>
     <br>
-    <input type="text" required>
+    <input type="text">
     <br><br>
     <label for="nama">Alamat :</label>
     <br>
-    <input type="text" required>
+    <input type="text">
     <br><br>
     <p>Jenis Kelamin :</p>
     <input type="radio" id="laki" name="klmn" value="Laki-laki">
@@ -117,13 +125,18 @@
     <br><br>
     <p>Alasan memilih sekolah dan jurusan yang dipilih :</p>
     <textarea rows="10" cols="40" placeholder=" Tulis alasan anda di sini..."></textarea><br>
-<button class="button-29" role="button">Sign Up</button></a>
+<a href="list.html" button class="button-29" role="button">Sign Up</button></a>
     <br><br>
 </form>
-<button type="reset" class="button-29" role="button">Ulang</button></a>
+<button onclick="resetForm()" class="button-29" role="button">Ulang</button></a>
 <br><br>
 <a href="welcome.html"><button class="button-29" role="button">Kembali</button></a>
-
-</center>
+    </form>
+  </div>
 </body>
+<script>
+  function resetForm(){
+      document.getElementById("reset").reset();
+  }
+</script>
 </html>
