@@ -1,31 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Formulir Pendaftaran</title>
   <link rel="stylesheet" href="ekternal.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <style>
     body {
-      background-image: url("https://wallpapercave.com/wp/wp3738693.jpg");
+      background-image: url("https://media.istockphoto.com/id/1281425762/id/foto/wallpaper-berpola-resolusi-tinggi.jpg?b=1&s=612x612&w=0&k=20&c=b1NX0WFT8jp1nyVmbD80Uy0tjnYpNEGbRI6zlmRbddk=");
       background-size: cover;
+      color: white;
     }
-
-
-
-    .container {
-      background-color: #dae5f1be;
-      text-align: center;
-      width: 350px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 2px solid;
-      border-radius: 20px;
-    }
-
+    
     .button-29 {
       align-items: center;
       appearance: none;
@@ -70,97 +58,102 @@
       box-shadow: #3c4fe0 0 3px 7px inset;
       transform: translateY(2px);
     }
+
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <form action="list.html" method="post" id="riset">
-      <h1 style="color: black(188, 88, 7, 0.911);">===========</h1>
-      <h1 style="color: black(243, 78, 7);">Formulir Pendaftaran</h1>
-      <h1 style="color: black(188, 88, 7, 0.911)">===========</h1>
-      <br>
-      <div class="form-group">
-        <label for="nama" style="color: black;">Nama Lengkap :</label>
+  <div class="container mt-5">
+    <form action="list.html" method="post">
+      <h1 class="text-center">Formulir Pendaftaran</h1>
+      <hr>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nama Lengkap">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Tempat Tanggal Lahir">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Alamat">
+          </div>
+          <p>Jenis Kelamin :</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="laki" name="klmn" value="Laki-laki">
+            <label class="form-check-label" for="laki">Laki-laki</label><br>
+            <input class="form-check-input" type="radio" id="prm" name="klmn" value="Perempuan">
+            <label class="form-check-label" for="prm">Perempuan</label><br><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <select class="form-select mb-3" aria-label="selectex">
+              <option selected>Pilih Sekolah</option>
+              <option value="Negeri1">SMK Negeri 1 Karawang</option>
+              <option value="Negeri2">SMK Negeri 2 Karawang</option>
+              <option value="Negeri3">SMK Negeri 3 Karawang</option>
+              <option value="BK1">SMK Bina Karya 1 Karawang</option>
+              <option value="BK2">SMK Bina Karya 2 Karawang</option>
+              <option value="Rosma">SMK Rosma Karawang</option>
+              <option value="PGRI1">SMK PGRI 1 Karawang</option>
+              <option value="PGRI2">SMK PGRI 2 Karawang</option>
+              <option value="Bhinneka">SMK Bhinneka Karawang</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-md-6">
+              <p>Pilihan Jurusan :</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="mesin" name="pilihan" value="Permesinan">
+                <label class="form-check-label" for="mesin">Teknik Permesinan</label><br>
+                <input class="form-check-input" type="checkbox" id="listrik" name="pilihan" value="Kelistrikan">
+                <label class="form-check-label" for="listrik">Teknik Kelistrikan</label><br>
+                <input class="form-check-input" type="checkbox" id="TKJ" name="pilihan" value="TKJ">
+                <label class="form-check-label" for="TKJ">Teknik Komputer Jaringan</label><br>
+                <input class="form-check-input" type="checkbox" id="Infor" name="pilihan" value="Informatika">
+                <label class="form-check-label" for="Infor">Teknik Informatika</label><br>
+                <input class="form-check-input" type="checkbox" id="Akutan" name="pilihan" value="Akutansi">
+                <label class="form-check-label" for="Akutan">Akutansi</label><br>
+                <input class="form-check-input" type="checkbox" id="TaBo" name="pilihan" value="TataBoga">
+                <label class="form-check-label" for="TaBo">Tata Boga</label><br>
+                <input class="form-check-input" type="checkbox" id="Kantor" name="pilihan" value="Perkantoran">
+                <label class="form-check-label" for="Kantor">Perkantoran</label><br>
+                <input class="form-check-input" type="checkbox" id="Hotel" name="pilihan" value="Perhotelan">
+                <label class="form-check-label" for="Hotel">Perhotelan</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+            <p>Alasan memilih sekolah dan jurusan yang dipilih :</p>
+            <textarea rows="10" class="form-control" placeholder="Tulis alasan anda di sini..."></textarea><br>
+          </div>
+        </div>
       </div>
-      <input type="text" class="form-control">
-      <br>
-      <div class="form-group">
-        <label for="ttl" style="color: black;">Tempat, Tanggal Lahir :</label>
+
+      <div class="text-center">
+        <a href="list.html" class="button-29" role="button">Sign Up</a>
+        <button type="button" onclick="resetForm()" class="button-29" role="button">Ulang</button>
+        <a href="welcome.html" class="button-29" role="button">Kembali</a>
       </div>
-      <input type="text" class="form-control">
-      <br>
-      <div class="form-group">
-        <label for="alamat" style="color: black;">Alamat :</label>
-      </div>
-      <input type="text" class="form-control">
-      <br>
-      <p>Jenis Kelamin :</p>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" id="laki" name="klmn" value="Laki-laki">
-        <label class="form-check-label" for="laki">Laki-laki</label><br>
-        <input class="form-check-input" type="radio" id="prm" name="klmn" value="Perempuan">
-        <label class="form-check-label" for="prm">Perempuan</label><br>
-      </div>
-      <br>
-      <p>Pilihan Sekolah :</p>
-      <select class="form-select" aria-label="selectex">
-        <option selected>Pilih Sekolah</option>
-        <option value="Negeri1">SMK Negeri 1 Karawang</option>
-        <option value="Negeri2">SMK Negeri 2 Karawang</option>
-        <option value="Negeri3">SMK Negeri 3 Karawang</option>
-        <option value="BK1">SMK Bina Karya 1 Karawang</option>
-        <option value="BK2">SMK Bina Karya 2 Karawang</option>
-        <option value="Rosma">SMK Rosma Karawang</option>
-        <option value="PGRI1">SMK PGRI 1 Karawang</option>
-        <option value="PGRI2">SMK PGRI 2 Karawang</option>
-        <option value="Bhinneka">SMK Bhinneka Karawang</option>
-      </select>
-      <br>
-      <p>Pilihan Jurusan :</p>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="mesin" name="pilihan" value="Permesinan">
-        <label class="form-check-label" for="mesin">Teknik Permesinan</label><br>
-        <input class="form-check-input" type="checkbox" id="listrik" name="pilihan" value="Kelistrikan">
-        <label class="form-check-label" for="listrik">Teknik Kelistrikan</label><br>
-        <input class="form-check-input" type="checkbox" id="TKJ" name="pilihan" value="TKJ">
-        <label class="form-check-label" for="TKJ">Teknik Komputer Jaringan</label><br>
-        <input class="form-check-input" type="checkbox" id="Infor" name="pilihan" value="Informatika">
-        <label class="form-check-label" for="Infor">Teknik Informatika</label><br>
-        <input class="form-check-input" type="checkbox" id="Akutan" name="pilihan" value="Akutansi">
-        <label class="form-check-label" for="Akutan">Akutansi</label><br>
-        <input class="form-check-input" type="checkbox" id="TaBo" name="pilihan" value="TataBoga">
-        <label class="form-check-label" for="TaBo">Tata Boga</label><br>
-        <input class="form-check-input" type="checkbox" id="Kantor" name="pilihan" value="Perkantoran">
-        <label class="form-check-label" for="Kantor">Perkantoran</label><br>
-        <input class="form-check-input" type="checkbox" id="Hotel" name="pilihan" value="Perhotelan">
-        <label class="form-check-label" for="Hotel">Perhotelan</label>
-      </div>
-      <br><br>
-      <p>Alasan memilih sekolah dan jurusan yang dipilih :</p>
-      <textarea rows="10" cols="38" placeholder=" Tulis alasan anda di sini..."></textarea><br>
-      <a href="list.html" button class="button-29" role="button">Sign Up</button></a>
-      <br><br>
-    </form>
-    <button onclick="resetForm()" class="button-29" role="button">Ulang</button></a>
-    <br><br>
-    <a href="welcome.html"><button class="button-29" role="button">Kembali</button></a>
     </form>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-  </script>
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous">
-  </script>
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script>
+    function resetForm() {
+      document.getElementById("riset").reset();
+    }
   </script>
 </body>
-<script>
-  function resetForm() {
-    document.getElementById("reset").reset();
-  }
-</script>
-
 </html>
